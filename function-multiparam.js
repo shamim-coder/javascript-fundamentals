@@ -25,5 +25,18 @@ function subtract(num1, num2) {
 
 var result = multiplyTwoNumbers(25, 89);
 
-console.log(result);
+// console.log(result);
 
+
+
+function findMax() {
+    let max = -Infinity;
+    for (i = 0; i < arguments.length; i++) {
+        if( arguments[i] > max) {
+            max = arguments[i];
+        }
+    }
+    return max;
+}
+
+var result = findMax(20,55,67,88,97,136)
