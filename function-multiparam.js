@@ -39,4 +39,4 @@ function findMax() {
     return max;
 }
 
-var result = findMax(20,55,67,88,97,136)
+var result = findMax(20,55,67,88,97,136);
