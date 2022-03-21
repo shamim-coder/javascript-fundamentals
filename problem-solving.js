@@ -146,3 +146,44 @@
 // var result = average(1000);
 
 // console.log(result);
+
+
+// function electricBillCalc(units) {
+//     let electricBill = 0;
+//     if (units <= 100) {
+//         electricBill = units * 5;
+//     } else if (units > 100 && units <= 200) {
+//         electricBill = ((units - 100) * 6)
+//         electricBill = electricBill + ((units - (units - 100)) * 5)
+//     } else if (units > 200 && units <= 300) {
+//         electricBill = ((units - 200) * 7)
+//         electricBill = electricBill + ((units - (units - 100)) * 6)
+//         electricBill = electricBill + ((units - (units - 100)) * 5)
+//     }
+
+//     return electricBill;
+// }
+
+// let result = electricBillCalc(295);
+// console.log(result);
+
+
+function getSecondLargest() {
+    let largest = arr[0];
+    let secondLargest = arr[0];
+
+    for (const element of arr) {
+        if (element >= largest) {
+            secondLargest = largest;
+            largest = element;
+        } else if (element >= secondLargest) {
+            secondLargest = element;
+        }
+    }
+    return secondLargest;
+}
+
+let arr = [56, 79, 63, 73, 11, 34, 99, 83];
+
+const result = getSecondLargest(arr);
+console.log(result);
